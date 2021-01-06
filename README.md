@@ -38,6 +38,8 @@ Nos plugins utilisent tous les deux la librairie [pylightning](https://pypi.org/
 
 ```from lightning import Plugin```
 
+#### Bitcoin value plugin :chart:
+
 Le premier plugin réalisé a pour objectif de récupérer la valeur du Bitcoin en temps réel dans différentes devises. Pour cela nous utilisons l'API mise à disposition par Coindesk. La fonction "getBTCvalue" nous permet de retourner un string contenant la valeur d'un BTC.
 
 ```
