@@ -1,4 +1,4 @@
-# Plugins for Bitcoin c-lightning :cactus:
+# Plugins for Bitcoin Lightning Network :cactus:
 
 ## Présentation du projet :racehorse:
 
