@@ -88,3 +88,62 @@ Enfin, @plugin.init() et @plugin.run() permettent l'initialisation de notre plug
 Par exemple :
 > lightningd --plugin=/path/to/plugin
 
+#### Bitcoin game emulator plugin :snake:
+
+Ce second plugin a été plus complexe a réaliser car wsl2 ne permet pas encore la gestion de plusieurs terminaux comme le permet un environnement Ubuntu classique avec gnome-terminal ou encore xterm. D'autre part nous avons aussi du trouver un moyen pour interragir entre nos différents terminaux et récupérer le score d'un utlisateur à la fin de sa partie.
+
+Nous avons fait nos tests sur le jeu snake. Vous trouverez le code de ce jeu dans le fichier "snake.py". Ce fichier n'a rien de particulier, c'est un snake classique. Ainsi notre plugin à la capacité de s'adapter à n'importe quel type de jeu développé en python et d'encoder son score avec la fonction native de c-lightning "signmessage".
+
+Ce plugin est composé de deux méthodes : 
+1. snake
+2. getRewardMessage
+
+La méthode snake permet de lancer le jeu snake dans un nouveau terminal. Cette méthode va ouvrir un nouveau terminal de commande qui va chercher le path du jeu en local et l'éxecuter. D'après nos tests il n'est pas possible d'éxecuter un jeu et de l'afficher directement depuis la console executant le plugin. Nous avons donc mis au point cette astuce pour executer le script désiré, l'afficher et interragir avec.
+
+```
+@plugin.method("snake")
+def snake(plugin):
+    """Starts a game of snake in a new console"""
+    plugin.log("starting snake")
+
+    os.system('cmd.exe /c start cmd.exe /c cmd/k python "Z:\\Bitcoin\\vic\\snake.py"')
+
+    return None
+```
+
+La deuxième méthode, "getRewardMessage" permet de lire le flux de données sortant du jeu, de récupérer le score de l'utilisateur puis de l'encoder avec la fonction native "signmessage" de c-lightning.
+
+```
+@plugin.method("getRewardMessage")
+def getRewardMessage(plugin):
+    """Outputs encoded reward message to send over the lightning network after you ended your snake game"""
+    file = open("/mnt/z/Bitcoin/vic/rewards/reward.txt")
+    score = int(file.read())
+
+    scorestr = f"Your score is : {score}"
+
+    plugin.log(scorestr)
+
+    command = f'lightning-cli signmessage "{scorestr}"'
+    stream = os.popen(command)
+    output = stream.read()
+
+    jsonstr = json.loads(output)
+
+
+    for key in jsonstr:
+        plugin.log(f"{key}: {jsonstr[key]}")
+
+    stream.close()
+    stream, output, jsonstr = None, None, None
+
+    return None
+```
+
+A chaque execution de ce plugin, l'utilisateur peut effectuer une partie de Snake. Son score sera affiché dans le terminal d'éxecution de lightningd et directement encodé.
+
+![usecase1](https://github.com/victorlrz/LightningPlugin/blob/main/src/gameplugin.JPG)
+
+## Authors :couple_with_heart: :two_men_holding_hands:
+- Quentin Tourette
+- Victor Larrezet
