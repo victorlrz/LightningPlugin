@@ -30,7 +30,7 @@ Nous avons installé et configuré c-lightning sur WSL2 depuis Windows 10. Le So
 
 Windows Terminal est aussi nécessaire pour éxecuter notre second plugin spécifiquement configué pour un environnement Windows 10. Vous pouvez installer Terminal Windows à partir du [Microsoft Store](https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab). Si vous n’avez pas accès au Microsoft Store, les builds sont publiées sur la page [Versions de GitHub](https://github.com/microsoft/terminal/releases). Si vous installez à partir de GitHub, le terminal n’est pas automatiquement mis à jour avec les nouvelles versions.
 
-Enfin, Bitoind et Lightningd sont configurés spécifiquement pour le testnet network.
+Enfin, Bitcoind et Lightningd sont configurés spécifiquement pour le testnet network.
 
 ## Overview du projet :eyes:
 
