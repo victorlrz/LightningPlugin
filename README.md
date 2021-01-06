@@ -18,5 +18,6 @@ Nos résultats :
 
 ![usecase1](https://github.com/victorlrz/LightningPlugin/blob/main/src/gameplugin.JPG)
 
+<div style="text-align:center">
 [![usecase2](https://github.com/victorlrz/LightningPlugin/blob/main/src/hook.png)](https://www.youtube.com/watch?v=S9FJD41cBcY&feature=youtu.be)
-
+</div>
