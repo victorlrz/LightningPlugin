@@ -48,9 +48,9 @@ def getBTCvalue(currency):
     return "1 BTC = " + resjson['bpi'][currency]['rate'] + symbol
 ```
 
-Cette fonction est appelée dans l'unique méthode mise à disposition à l'utilisateur. La méthode "BTCvalue" prend en paramètres deux arguments. Le premier argument "stopstr" permet à l'utilisateur de contrôler l'affichage des valeurs du BTC (afficher/arrêter l'affichage). Le deuxième paramètre "currency", permet à l'utilisateur de sélectionner dans quelle devise afficher la valeur BTC.
+Cette fonction est appelée dans l'unique méthode mise à disposition à l'utilisateur. La méthode "BTCvalue" prend en paramètres deux arguments. Le premier argument "stopstr" permet à l'utilisateur de contrôler l'affichage des valeurs du BTC (afficher/arrêter l'affichage). Le deuxième paramètre "currency" permet à l'utilisateur de sélectionner dans quelle devise afficher la valeur BTC.
 
-@plugin.method est natif à "pylightning" et permet de créer d'ajouter des méthodes à un plugin.
+@plugin.method est natif à "pylightning" et permet de créer puis d'ajouter des méthodes à un plugin.
 
 ```
 @plugin.method("BTCvalue")
