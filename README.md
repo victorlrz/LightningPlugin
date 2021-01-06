@@ -18,7 +18,7 @@ Nos résultats :
 
 Le premier plugin nous permet d'afficher les valeurs du Bitcoin dans différentes devises dans le terminal où est chargé lightningd.
 
-![usecase1](https://github.com/victorlrz/LightningPlugin/blob/main/src/gameplugin.JPG)
+![usecase1](https://github.com/victorlrz/LightningPlugin/blob/main/src/btcplugin.JPG)
 
 Le deuxième usecase présenté dans la vidéo ci-dessous permet d'éxécuter un jeu python puis d'encoder le score de l'utilisateur avec la fonction native "signmessage" de c-lightning.
 
