@@ -16,10 +16,7 @@ Pour ce projet, nous avons défini deux cas d'usage:
 
 Nos résultats : 
 
-[![usecase1](https://github.com/victorlrz/LightningPlugin/blob/main/src/gameplugin.JPG)
+![usecase1](https://github.com/victorlrz/LightningPlugin/blob/main/src/gameplugin.JPG)
 
-<a href="https://www.youtube.com/watch?v=S9FJD41cBcY&feature=youtu.be
-" target="_blank"><img src="https://github.com/victorlrz/LightningPlugin/blob/main/src/hook.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-
+[![usecase2](https://github.com/victorlrz/LightningPlugin/blob/main/src/hook.png)](https://www.youtube.com/watch?v=S9FJD41cBcY&feature=youtu.be)
 
