@@ -14,3 +14,7 @@ Pour ce projet, nous avons défini deux cas d'usage:
 1. Le premier, faire des requêtes HTTP en utilisant l'API [Coindesk]('https://api.coindesk.com/v1/bpi/currentprice.json') pour récupérer les prix du Bitcoin en temps réel et dans différentes devises (€, $ et £). L'utilisateur a ainsi aux prix du Bitcoin en direct dans son interface lightning.
 2. Créer un plugin capable d'éxecuter n'importe quel jeu python dans un autre terminal puis capable de récupérer le score réalisé lpar 'utilisateur et de l'encoder avec la fonction native "signmessage" de c-lighning.
 
+Nos résultats : 
+
+[![usecase1](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![usecase2]https://github.com/victorlrz/LightningPlugin/blob/main/src/2021-01-06_01-02-37.mp4)
