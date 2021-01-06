@@ -17,4 +17,4 @@ Pour ce projet, nous avons défini deux cas d'usage:
 Nos résultats : 
 
 [![usecase1](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://github.com/victorlrz/LightningPlugin/blob/main/src/hook.png)](https://youtu.be/vt5fpE0bzSY)
