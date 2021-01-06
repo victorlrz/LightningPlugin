@@ -44,7 +44,7 @@ def BTCvalue(plugin, stopstr=None, currency="USD", count=0, starttime = time.tim
 
 @plugin.init()
 def init(options, configuration, plugin):
-    plugin.log("THE SUPER PLUGIN IS NOT CRASHING")
+    plugin.log("The plugin is not crashing")
 
 """@plugin.subscribe("connect")
 def on_connect(plugin, **kwargs):
