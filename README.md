@@ -84,6 +84,5 @@ def BTCvalue(plugin, stopstr=None, currency="USD", count=0, starttime = time.tim
 Enfin, @plugin.init() et @plugin.run() permettent l'initialisation de notre plugin. Pour lancer un plugin il suffit de préciser son path absolu au lancement de lightningd.
 
 Par exemple :
----
-lightningd --plugin=/path/to/plugin
----
+> lightningd --plugin=/path/to/plugin
+
