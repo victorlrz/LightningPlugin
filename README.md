@@ -90,7 +90,7 @@ Par exemple :
 
 #### Bitcoin game emulator plugin :snake:
 
-Ce second plugin a été plus complexe a réaliser car wsl2 ne permet pas encore la gestion de plusieurs terminaux comme le permet un environnement Ubuntu classique avec gnome-terminal ou encore xterm. D'autre part nous avons aussi du trouver un moyen pour interragir entre nos différents terminaux et récupérer le score d'un utlisateur à la fin de sa partie.
+Ce second plugin a été plus complexe a réaliser car WSL2 ne permet pas encore la gestion de plusieurs terminaux comme le permet un environnement Ubuntu classique avec gnome-terminal ou encore xterm. D'autre part nous avons aussi du trouver un moyen pour interragir entre nos différents terminaux et récupérer le score d'un utlisateur à la fin de sa partie.
 
 Nous avons fait nos tests sur le jeu snake. Vous trouverez le code de ce jeu dans le fichier "snake.py". Ce fichier n'a rien de particulier, c'est un snake classique. Ainsi notre plugin à la capacité de s'adapter à n'importe quel type de jeu développé en python et d'encoder son score avec la fonction native de c-lightning "signmessage".
 
