@@ -28,8 +28,6 @@ Le deuxième usecase présenté dans la vidéo ci-dessous permet d'éxécuter un
 
 Nous avons installé et configuré c-lightning sur WSL2 depuis Windows 10. Le Sous-système Windows pour Linux permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle traditionnelle ou d’une configuration à double démarrage.
 
-Windows Terminal est aussi nécessaire pour éxecuter notre second plugin spécifiquement configuré pour un environnement Windows 10. Vous pouvez installer Terminal Windows à partir du [Microsoft Store](https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab). Si vous n’avez pas accès au Microsoft Store, les builds sont publiées sur la page [Versions de GitHub](https://github.com/microsoft/terminal/releases). Si vous installez à partir de GitHub, le terminal n’est pas automatiquement mis à jour avec les nouvelles versions.
-
 Enfin, Bitcoind et Lightningd sont configurés spécifiquement pour le testnet network.
 
 ## Overview du projet :eyes:
